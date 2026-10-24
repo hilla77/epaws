@@ -56,7 +56,7 @@ function ContactPage() {
             <ul className="mt-4 grid gap-4 text-sm">
               <li className="flex gap-3">
                 <Phone className="mt-0.5 size-4 shrink-0 text-primary" />
-                <a href="tel:+25477181963">+25477181963</a>
+                <a href="tel:+254797181963">+254797181963</a>
               </li>
               <li className="flex gap-3">
                 <MessageCircle className="mt-0.5 size-4 shrink-0 text-primary" />
