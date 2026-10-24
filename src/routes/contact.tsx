@@ -60,7 +60,7 @@ function ContactPage() {
               </li>
               <li className="flex gap-3">
                 <MessageCircle className="mt-0.5 size-4 shrink-0 text-primary" />
-                <a href="https://wa.me/25477181963">WhatsApp us on +25477181963</a>
+                <a href="https://wa.me/254797181963">WhatsApp us on +254797181963</a>
               </li>
               <li className="flex gap-3">
                 <Mail className="mt-0.5 size-4 shrink-0 text-primary" />
@@ -70,8 +70,7 @@ function ContactPage() {
                     <a href="mailto:contact@epawssolution.com">contact@epawssolution.com</a>
                   </span>
                   <span className="text-muted-foreground">
-                    Sales:{" "}
-                    <a href="mailto:sales@epawssolution.com">sales@epawssolution.com</a>
+                    Sales: <a href="mailto:sales@epawssolution.com">sales@epawssolution.com</a>
                   </span>
                   <span className="text-muted-foreground">
                     Support:{" "}
