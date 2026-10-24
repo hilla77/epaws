@@ -7,10 +7,8 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-2">
-            <span className="grid size-9 place-items-center rounded-lg bg-primary font-display text-lg font-bold text-primary-foreground">
-              e
-            </span>
-            <span className="font-display text-lg font-bold">Epaws Solutions</span>
+            {/* Removed text, image only */}
+            <img src="/logo.png" alt="Epaws Solutions" className="h-10 w-auto object-contain" />
           </div>
           <p className="mt-4 text-sm text-ink-muted">
             Nurturing future tech leaders across Africa through hands-on coding education,

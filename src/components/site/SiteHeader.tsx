@@ -46,14 +46,17 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/90 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4">
-        <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <span className="grid size-9 place-items-center rounded-lg bg-primary font-display text-lg font-bold text-primary-foreground">
-            e
-          </span>
-          <span className="font-display text-lg font-bold tracking-tight">Epaws Solutions</span>
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 md:h-20">
+        {/* Logo Section */}
+        <Link to="/" className="flex shrink-0 items-center gap-2" onClick={() => setOpen(false)}>
+          <img
+            src="/logo.png"
+            alt="Epaws Solutions"
+            className="h-8 w-auto object-contain sm:h-10 md:h-14"
+          />
         </Link>
 
+        {/* Desktop Navigation */}
         <nav className="hidden items-center gap-1 lg:flex">
           {nav.map((item) => (
             <Link
@@ -85,6 +88,7 @@ export function SiteHeader() {
           </DropdownMenu>
         </nav>
 
+        {/* Desktop Auth Buttons */}
         <div className="hidden items-center gap-2 lg:flex">
           {signedIn ? (
             <>
@@ -98,15 +102,20 @@ export function SiteHeader() {
           ) : (
             <>
               <Button asChild size="sm" variant="ghost">
-                <Link to="/auth" search={{ mode: "signin" }}>Login</Link>
+                <Link to="/auth" search={{ mode: "signin" }}>
+                  Login
+                </Link>
               </Button>
               <Button asChild size="sm" variant="outline">
-                <Link to="/auth" search={{ mode: "signup" }}>Register</Link>
+                <Link to="/auth" search={{ mode: "signup" }}>
+                  Register
+                </Link>
               </Button>
             </>
           )}
         </div>
 
+        {/* Mobile Menu Toggle */}
         <button
           type="button"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -118,6 +127,7 @@ export function SiteHeader() {
         </button>
       </div>
 
+      {/* Mobile Menu Content */}
       {open ? (
         <div className="border-t border-border bg-background lg:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col px-4 py-2">
@@ -151,19 +161,31 @@ export function SiteHeader() {
               {signedIn ? (
                 <>
                   <Button asChild variant="outline">
-                    <Link to="/admin" onClick={() => setOpen(false)}>Dashboard</Link>
+                    <Link to="/admin" onClick={() => setOpen(false)}>
+                      Dashboard
+                    </Link>
                   </Button>
-                  <Button variant="outline" onClick={() => { setOpen(false); void signOut(); }}>
+                  <Button
+                    variant="outline"
+                    onClick={() => {
+                      setOpen(false);
+                      void signOut();
+                    }}
+                  >
                     Log out
                   </Button>
                 </>
               ) : (
                 <>
                   <Button asChild variant="outline">
-                    <Link to="/auth" search={{ mode: "signin" }} onClick={() => setOpen(false)}>Login</Link>
+                    <Link to="/auth" search={{ mode: "signin" }} onClick={() => setOpen(false)}>
+                      Login
+                    </Link>
                   </Button>
                   <Button asChild variant="secondary">
-                    <Link to="/auth" search={{ mode: "signup" }} onClick={() => setOpen(false)}>Register</Link>
+                    <Link to="/auth" search={{ mode: "signup" }} onClick={() => setOpen(false)}>
+                      Register
+                    </Link>
                   </Button>
                 </>
               )}
