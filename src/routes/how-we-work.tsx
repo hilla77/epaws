@@ -34,13 +34,13 @@ export const Route = createFileRoute("/how-we-work")({
           "Four steps from first conversation to a running programme: choose a service, request a meeting, receive a custom plan, and we deliver.",
       },
       { property: "og:title", content: "How We Work — Epaws Solutions" },
-      { property: "og:url", content: "https://epawssolution.lovable.app/how-we-work" },
+      { property: "og:url", content: "https://epawssolutions/how-we-work" },
       {
         property: "og:description",
         content: "Our simple four-step process for schools and organisations.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://epawssolution.lovable.app/how-we-work" }],
+    links: [{ rel: "canonical", href: "https://epawssolutions/how-we-work" }],
   }),
   loader: async ({ context }) => {
     await context.queryClient.ensureQueryData(sectionsQuery("how-we-work"));

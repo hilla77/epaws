@@ -8,7 +8,7 @@ import {
   type SitemapEntry,
 } from "@/lib/sitemap";
 
-const BASE_URL = "https://epawssolution.lovable.app";
+const BASE_URL = "https://epawssolutions";
 
 export const Route = createFileRoute("/sitemap.xml")({
   staticData: { sitemap: false },

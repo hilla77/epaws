@@ -7,7 +7,6 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-2">
-            {/* Removed text, image only */}
             <img src="/logo.png" alt="Epaws Solutions" className="h-10 w-auto object-contain" />
           </div>
           <p className="mt-4 text-sm text-ink-muted">
@@ -76,19 +75,19 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-3 text-sm text-ink-muted">
             <li className="flex items-start gap-2">
               <Phone className="mt-0.5 size-4 shrink-0" />
-              <a href="tel:+254797181963">+254797181963</a>
+              <a href="tel:+254743288024">+254743288024</a>
             </li>
             <li className="flex items-start gap-2">
               <Mail className="mt-0.5 size-4 shrink-0" />
-              <a href="mailto:contact@epawssolution.com">contact@epawssolution.com</a>
+              <a href="mailto:info@epawssolutions.com">info@epawssolutions.com</a>
             </li>
             <li className="flex items-start gap-2">
               <Mail className="mt-0.5 size-4 shrink-0" />
-              <a href="mailto:sales@epawssolution.com">sales@epawssolution.com</a>
+              <a href="mailto:sales@epawssolutions.com">sales@epawssolutions.com</a>
             </li>
             <li className="flex items-start gap-2">
               <Mail className="mt-0.5 size-4 shrink-0" />
-              <a href="mailto:support@epawssolution.com">support@epawssolution.com</a>
+              <a href="mailto:support@epawssolutions.com">support@epawssolutions.com</a>
             </li>
             <li className="flex items-start gap-2">
               <MapPin className="mt-0.5 size-4 shrink-0" />
@@ -97,14 +96,14 @@ export function SiteFooter() {
           </ul>
           <div className="mt-4 flex gap-3">
             <a
-              href="https://instagram.com"
+              href="@epawssolutions"
               aria-label="Instagram"
               className="grid size-9 place-items-center rounded-md border border-ink-muted/30"
             >
               <Instagram className="size-4" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/epaws-solutions/home"
               aria-label="LinkedIn"
               className="grid size-9 place-items-center rounded-md border border-ink-muted/30"
             >

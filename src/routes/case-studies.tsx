@@ -15,13 +15,13 @@ export const Route = createFileRoute("/case-studies")({
           "Real outcomes from Kenyan schools and organisations: coding clubs, computer labs, campus networks and robotics pathways.",
       },
       { property: "og:title", content: "Case Studies — Epaws Solutions" },
-      { property: "og:url", content: "https://epawssolution.lovable.app/case-studies" },
+      { property: "og:url", content: "https://epawssolutions/case-studies" },
       {
         property: "og:description",
         content: "Schools and clients we've served, and what changed for them.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://epawssolution.lovable.app/case-studies" }],
+    links: [{ rel: "canonical", href: "https://epawssolutions/case-studies" }],
   }),
   loader: async ({ context }) => {
     await Promise.all([

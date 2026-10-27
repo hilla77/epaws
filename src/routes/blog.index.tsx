@@ -16,13 +16,13 @@ export const Route = createFileRoute("/blog/")({
           "Articles on teaching coding in African classrooms, planning computer labs, Arduino projects and school technology.",
       },
       { property: "og:title", content: "Epaws Solutions Blog" },
-      { property: "og:url", content: "https://epawssolution.lovable.app/blog" },
+      { property: "og:url", content: "https://epawssolutions/blog" },
       {
         property: "og:description",
         content: "Practical writing on coding education and school technology in Kenya.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://epawssolution.lovable.app/blog" }],
+    links: [{ rel: "canonical", href: "https://epawssolutions/blog" }],
   }),
   loader: async ({ context }) => {
     await context.queryClient.ensureQueryData(postsQuery());
@@ -119,7 +119,9 @@ function BlogIndex() {
               </h2>
               <p className="mt-3 flex-1 text-sm text-muted-foreground">{post.excerpt}</p>
               <div className="mt-5 flex items-center justify-between border-t border-border/60 pt-4">
-                <span className="text-xs text-muted-foreground">{formatDate(post.published_at)}</span>
+                <span className="text-xs text-muted-foreground">
+                  {formatDate(post.published_at)}
+                </span>
                 <span className="inline-flex items-center gap-1 text-sm font-semibold text-primary">
                   Read
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />

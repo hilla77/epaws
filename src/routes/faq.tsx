@@ -21,13 +21,13 @@ export const Route = createFileRoute("/faq")({
           "Answers for schools, parents and organisations about our coding curriculum, licensing, pricing and services across Kenya.",
       },
       { property: "og:title", content: "FAQ — Epaws Solutions" },
-      { property: "og:url", content: "https://epawssolution.lovable.app/faq" },
+      { property: "og:url", content: "https://epawssolutions/faq" },
       {
         property: "og:description",
         content: "Common questions from schools, parents and partners, answered.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://epawssolution.lovable.app/faq" }],
+    links: [{ rel: "canonical", href: "https://epawssolutions/faq" }],
   }),
   loader: async ({ context }) => {
     await context.queryClient.ensureQueryData(faqsQuery());
@@ -59,7 +59,9 @@ function FaqPage() {
                 .map((f) => (
                   <AccordionItem key={f.id} value={f.id}>
                     <AccordionTrigger className="text-left">{f.question}</AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground">{f.answer}</AccordionContent>
+                    <AccordionContent className="text-muted-foreground">
+                      {f.answer}
+                    </AccordionContent>
                   </AccordionItem>
                 ))}
             </Accordion>

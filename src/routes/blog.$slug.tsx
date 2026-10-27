@@ -15,7 +15,7 @@ export const Route = createFileRoute("/blog/$slug")({
       return { meta: [{ title: "Unavailable" }, { name: "robots", content: "noindex" }] };
     }
     const title = `${loaderData.title} — Epaws Solutions`;
-    const url = `https://epawssolution.lovable.app/blog/${params.slug}`;
+    const url = `https://epawssolutions/blog/${params.slug}`;
     return {
       meta: [
         { title },

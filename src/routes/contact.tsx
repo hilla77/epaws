@@ -18,13 +18,13 @@ export const Route = createFileRoute("/contact")({
           "Talk to the Epaws Solutions team in Nairobi about coding programmes, IT consultancy, networking or licensing. We reply within one working day.",
       },
       { property: "og:title", content: "Contact Epaws Solutions" },
-      { property: "og:url", content: "https://epawssolution.lovable.app/contact" },
+      { property: "og:url", content: "https://epawssolutions/contact" },
       {
         property: "og:description",
         content: "Request a meeting or a quote for your school or organisation.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://epawssolution.lovable.app/contact" }],
+    links: [{ rel: "canonical", href: "https://epawssolutions/contact" }],
   }),
   loader: async ({ context }) => {
     await Promise.all([
@@ -60,21 +60,20 @@ function ContactPage() {
               </li>
               <li className="flex gap-3">
                 <MessageCircle className="mt-0.5 size-4 shrink-0 text-primary" />
-                <a href="https://wa.me/254797181963">WhatsApp us on +254797181963</a>
+                <a href="https://wa.me/254743288024">WhatsApp us on +254743288024</a>
               </li>
               <li className="flex gap-3">
                 <Mail className="mt-0.5 size-4 shrink-0 text-primary" />
                 <div className="grid gap-1">
                   <span className="text-muted-foreground">
-                    General:{" "}
-                    <a href="mailto:contact@epawssolution.com">contact@epawssolution.com</a>
+                    General: <a href="mailto:info@epawssolutions.com">info@epawssolutions.com</a>
                   </span>
                   <span className="text-muted-foreground">
-                    Sales: <a href="mailto:sales@epawssolution.com">sales@epawssolution.com</a>
+                    Sales: <a href="mailto:sales@epawssolutions.com">sales@epawssolutions.com</a>
                   </span>
                   <span className="text-muted-foreground">
                     Support:{" "}
-                    <a href="mailto:support@epawssolution.com">support@epawssolution.com</a>
+                    <a href="mailto:support@epawssolutions.com">support@epawssolutions.com</a>
                   </span>
                 </div>
               </li>

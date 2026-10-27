@@ -13,16 +13,16 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Epaws Solutions is a Kenyan IT company building coding skills in schools and communities across Africa. Our story, vision and values.",
+          "Epaws Solutions is a Kenyan IT company building coding skills in schools, businesses, organisations and communities across Africa. Our story, vision and values.",
       },
       { property: "og:title", content: "About Epaws Solutions" },
-      { property: "og:url", content: "https://epawssolution.lovable.app/about" },
+      { property: "og:url", content: "https://epawssolutions/about" },
       {
         property: "og:description",
         content: "Why we build coding skills in African schools, and how we got here.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://epawssolution.lovable.app/about" }],
+    links: [{ rel: "canonical", href: "https://epawssolutions/about" }],
   }),
   loader: async ({ context }) => {
     await Promise.all([

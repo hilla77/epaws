@@ -19,7 +19,7 @@ export const Route = createFileRoute("/services/$slug")({
       return { meta: [{ title: "Unavailable" }, { name: "robots", content: "noindex" }] };
     }
     const title = `${loaderData.title} — Epaws Solutions`;
-    const url = `https://epawssolution.lovable.app/services/${params.slug}`;
+    const url = `https://epawssolutions/services/${params.slug}`;
     return {
       meta: [
         { title },
@@ -40,7 +40,7 @@ export const Route = createFileRoute("/services/$slug")({
             provider: {
               "@type": "Organization",
               name: "Epaws Solutions",
-              url: "https://epawssolution.lovable.app",
+              url: "https://epawssolutions",
             },
             areaServed: "Kenya",
           }),

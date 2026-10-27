@@ -24,14 +24,14 @@ export const Route = createFileRoute("/")({
           "Epaws Solutions partners with Kenyan schools to deliver hands-on coding education, IT consultancy, networking and CBC digital books. Request a meeting today.",
       },
       { property: "og:title", content: "Epaws Solutions — Coding Education & IT Services" },
-      { property: "og:url", content: "https://epawssolution.lovable.app/" },
+      { property: "og:url", content: "https://epawssolutions/" },
       {
         property: "og:description",
         content:
           "Hands-on coding curriculum, IT consultancy and networking for schools and organisations across Kenya.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://epawssolution.lovable.app/" }],
+    links: [{ rel: "canonical", href: "https://epawssolutions/" }],
   }),
   loader: async ({ context }) => {
     await Promise.all([

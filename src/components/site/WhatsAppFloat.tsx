@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "254797181963";
+const WHATSAPP_NUMBER = "254743288024";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
   "Hello Epaws Solutions! I'd like to know more about your services.",
 )}`;

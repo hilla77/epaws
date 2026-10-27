@@ -16,13 +16,13 @@ export const Route = createFileRoute("/services/")({
           "School coding curriculum, IT consultancy, computer networking, content licensing, tech gadgets and CBC digital books for Kenyan schools.",
       },
       { property: "og:title", content: "Services — Epaws Solutions" },
-      { property: "og:url", content: "https://epawssolution.lovable.app/services" },
+      { property: "og:url", content: "https://epawssolutions/services" },
       {
         property: "og:description",
         content: "Six ways we help schools and organisations build real technology capability.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://epawssolution.lovable.app/services" }],
+    links: [{ rel: "canonical", href: "https://epawssolutions/services" }],
   }),
   loader: async ({ context }) => {
     await context.queryClient.ensureQueryData(servicesQuery());

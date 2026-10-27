@@ -15,13 +15,13 @@ export const Route = createFileRoute("/shop")({
           "Arduino kits, robotics components, sensors and lab-ready laptops that support our coding curriculum. Enquiry-based ordering across Kenya.",
       },
       { property: "og:title", content: "Tech Gadgets — Epaws Solutions" },
-      { property: "og:url", content: "https://epawssolution.lovable.app/shop" },
+      { property: "og:url", content: "https://epawssolutions/shop" },
       {
         property: "og:description",
         content: "Learning-ready kits and devices for schools, parents and makers.",
       },
     ],
-    links: [{ rel: "canonical", href: "https://epawssolution.lovable.app/shop" }],
+    links: [{ rel: "canonical", href: "https://epawssolutions/shop" }],
   }),
   loader: async ({ context }) => {
     await context.queryClient.ensureQueryData(gadgetsQuery());
